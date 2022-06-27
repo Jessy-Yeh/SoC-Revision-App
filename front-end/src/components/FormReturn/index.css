@@ -1,0 +1,14 @@
+.form-return a {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+.submit-container {
+  margin: 2rem;
+}
+
+.submit-text {
+  margin: 0 0 1rem 0;
+}

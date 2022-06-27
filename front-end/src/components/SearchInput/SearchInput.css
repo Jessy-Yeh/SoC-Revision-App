@@ -1,0 +1,45 @@
+:root {
+  --bg-color: #fcf7f8;
+  --main-color: #29a8cf;
+  --main-text-color: #424c55;
+  --black-color: #000000;
+  --hightlight-color: #c74949;
+  --hover-color: #79cbdc;
+}
+
+.search-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 0.2rem;
+  color: var(--bg-color);
+
+  background-color: var(--main-color);
+
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.random-btn {
+  background-color: #389331;
+  color: white;
+}
+
+.search-btn:hover {
+  color: var(--black-color);
+
+  background-color: var(--hover-color);
+}
+
+.random-btn:hover {
+  background-color: #7abd75;
+  color: var(--black-color);
+}
+
+#search-bar {
+  font-size: 1.2rem;
+  padding: 1rem 1.8rem;
+  border-radius: 10px;
+  border: 1px solid var(--main-text-color);
+  margin-bottom: 0.5rem;
+}

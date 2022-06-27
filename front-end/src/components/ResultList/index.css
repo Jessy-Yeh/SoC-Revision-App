@@ -1,0 +1,17 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+
+  max-width: 800px;
+}
+
+.resultlist-container {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

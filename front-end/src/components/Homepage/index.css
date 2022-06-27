@@ -1,0 +1,39 @@
+:root {
+  --bg-color: #fcf7f8;
+  --main-color: #29a8cf;
+  --main-text-color: #424c55;
+  --black-color: #000000;
+  --hightlight-color: #c74949;
+  --hover-color: #79cbdc;
+}
+
+.home-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin: 2rem 0 5rem 0;
+  text-align: center;
+}
+
+.header > h1 {
+  font-size: 4rem;
+}
+
+.header > p {
+  color: var(--main-text-color);
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    margin: 0 1rem 2rem 0;
+  }
+
+  .header > h1 {
+    font-size: 3rem;
+  }
+}

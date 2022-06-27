@@ -1,0 +1,38 @@
+:root {
+  --bg-color: #fcf7f8;
+  --main-color: #29a8cf;
+  --main-text-color: #424c55;
+  --black-color: #000000;
+  --hightlight-color: #c74949;
+  --hover-color: #79cbdc;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--main-color);
+}
+
+nav button {
+  border: none;
+  border-radius: 10px;
+  color: var(--main-text-color);
+  background-color: var(--bg-color);
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  font-weight: bold;
+}
+
+.logo {
+  width: 50px;
+}
+
+nav button:hover {
+  background-color: var(--hightlight-color);
+  color: white;
+}
