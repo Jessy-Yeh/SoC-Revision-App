@@ -1,0 +1,31 @@
+{
+  "name": "w9-backend-project-team-16",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node ./bin/www.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "db:createLinksTable": "node ./db/scripts/createLinksTable.js",
+    "db:populateLinksTable": "node ./db/scripts/populateLinksTable.js",
+    "db:dropLinksTable": "node ./db/scripts/dropLinksTable.js",
+    "db:createSnippetTable": "node ./db/scripts/createSnippetTable.js",
+    "db:populateSnippetTable": "node ./db/scripts/populateSnippetTable.js",
+    "db:dropSnippetTable": "node ./db/scripts/dropSnippetTable.js",
+    "db:resetLinksTable": "npm run db:dropLinksTable && npm run db:createLinksTable && npm run db:populateLinksTable",
+    "db:resetSnippetTable": "npm run db:dropSnippetTable && npm run db:createSnippetTable && npm run db:populateSnippetTable"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.1",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "jest": "^28.1.1",
+    "supertest": "^6.2.3"
+  }
+}
